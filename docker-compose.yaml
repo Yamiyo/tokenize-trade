@@ -1,0 +1,16 @@
+services:
+  backend:
+#    build:
+#      context: .
+#      dockerfile: Dockerfile
+    image: yamiyokou/tokenize-trade:latest
+    container_name: tokenize-trade
+    ports:
+      - '12345:12345'
+#    volumes:
+#      - ./conf.d:/conf.d
+    networks:
+      - dotnet
+networks:
+  dotnet:
+    driver: bridge

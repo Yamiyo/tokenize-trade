@@ -1,0 +1,10 @@
+log_config:
+  name: "Local-Test"
+  env: "DEV"
+  level: "debug"
+gin_config:
+  address: ":12345"
+binance_config:
+  api_key: ''
+  api_secret: ''
+  ws_url: 'wss://stream.binance.com:9443'
